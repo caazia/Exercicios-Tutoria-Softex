@@ -22,6 +22,18 @@
                     nome: props.nome
                 }
             }
+            componentDidMount()
+            {
+                alert("Componente montado");
+            }
+            componentDidUpdate()
+            {
+                alert("Componente atualizado");
+            }
+            componentDidUnmount()
+            {
+                alert("Componente desmontado");
+            }
 
             render() {
                 return (
@@ -36,6 +48,7 @@
         const nomeDaPessoa = "Cássia";
 
         ReactDOM.render(<Pessoa nome={nomeDaPessoa} />, document.getElementById("root"));
+
     </script>
 </body>
 
